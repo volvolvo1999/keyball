@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 const uint8_t CPI_DEFAULT    = KEYBALL_CPI_DEFAULT / 100;
 const uint8_t CPI_MAX        = pmw3360_MAXCPI + 1;
-const uint8_t SCROLL_DIV_MAX = 7;
+const uint8_t SCROLL_DIV_MAX = 10;
 
 const uint16_t AML_TIMEOUT_MIN = 100;
 const uint16_t AML_TIMEOUT_MAX = 1000;
@@ -407,7 +407,7 @@ void keyball_oled_render_ballinfo(void) {
     oled_write(format_4d(keyball.last_mouse.v), false);
 
     // 2nd line, empty label and CPI
-    oled_write_P(PSTR("    \xB1\xBC\xBD"), false);
+    oled_write_P(PSTR("44  \xB1\xBC\xBD"), false);
     oled_write(format_4d(keyball_get_cpi()) + 1, false);
     oled_write_P(PSTR("00 "), false);
 
@@ -703,10 +703,10 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
                 add_cpi(-1);
                 break;
             case CPI_I1K:
-                add_cpi(10);
+                add_cpi(5);
                 break;
             case CPI_D1K:
-                add_cpi(-10);
+                add_cpi(-5);
                 break;
 
             case SCRL_TO:
