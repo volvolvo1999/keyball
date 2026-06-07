@@ -68,9 +68,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [4] = LAYOUT_universal(
-    _______  , _______  , _______  , _______  , _______  , _______  ,                                                   KC_CALC      , KC_SCRL     , KC_VOLU  , KC_NUM   , _______  , _______  ,
-    PASS7    , PASS5    , PASS3    , PASS1    , MAIL3    , MAIL1    ,                                                   RALT(KC_PSCR), S(KC_CAPS)  , KC_VOLD  , _______  , _______  , _______  ,
-    _______  , PASS6    , PASS4    , PASS2    , MAIL4    , MAIL2    ,                                                   KC_PSCR      , WIN_SHFT_S  , KC_MUTE  , _______  , _______  , _______  ,
+    _______  , _______  , _______  , _______  , _______  , _______  ,                                                   KC_CALC      , KC_SCRL     , KC_NUM   , KC_MUTE   , _______  , _______  ,
+    PASS7    , PASS5    , PASS3    , PASS1    , MAIL3    , MAIL1    ,                                                   RALT(KC_PSCR), S(KC_CAPS)  , _______  , KC_VOLU  , _______  , _______  ,
+    _______  , PASS6    , PASS4    , PASS2    , MAIL4    , MAIL2    ,                                                   KC_PSCR      , WIN_SHFT_S  , _______  , KC_VOLD_______  , _______  , _______  ,
                           _______  , _______  , _______  , _______  , _______  ,                             _______  , _______      , _______     , _______  , _______
   ),
 
